@@ -5,7 +5,7 @@
 #include < math.h >
 #include <time.h>
 
-void vvod(int *array, int *z) {
+void input(int *array, int *z) {
 	for (array; array <= z; array++) {
 		*array = -100 + rand() % (100 + 100);
 		if (*array == 0) {
@@ -50,7 +50,7 @@ int main() {
 	int M[strochka][stolb];
 	int* ptr = M[0];
 	int* last = M[0] + strochka * stolb-1;
-	vvod( ptr, last);
+	input( ptr, last);
 	vovod(strochka, stolb, ptr);
 	prv(proverka(ptr, last));
 }
