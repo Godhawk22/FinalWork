@@ -47,9 +47,9 @@ int main() {
 	srand(time(NULL));
 	const int strochka = 4;
 	const int stolb = 3;
-	int M[strochka][stolb];
-	int* ptr = M[0];
-	int* last = M[0] + strochka * stolb-1;
+	float M[strochka][stolb];/*izmenenie peremennoi*\
+	float* ptr = M[0];
+	float* last = M[0] + strochka * stolb-1;
 	input( ptr, last);
 	vovod(strochka, stolb, ptr);
 	prv(proverka(ptr, last));
